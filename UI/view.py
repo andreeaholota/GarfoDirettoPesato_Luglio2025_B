@@ -74,6 +74,10 @@ class View(ft.UserControl):
         self._page.controls.append(self.txt_result)
         self._page.update()
 
+        self._controller.fillDDCategory()
+        self._controller.fillDDDataInizio()
+        self._controller.fillDDDataFine()
+
     @property
     def controller(self):
         return self._controller
